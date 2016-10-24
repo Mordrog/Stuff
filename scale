@@ -1,0 +1,29 @@
+#!/usr/bin/octave -q
+
+% Linux: chmod a+x scale, aktywowanie ./scale arg1 ...
+
+function [IMG] = scale(IMG,x,y)
+if (x>y)
+ c = 100 * y/x;
+ IMG = imresize(IMG, [c 100]);
+else 
+ c = 100 * x/y;
+ IMG = imresize(IMG, [100 c]);
+endif;
+end
+
+
+for i = 1:nargin
+
+IMG = imread(argv(){i});
+[y,x,c] = size(IMG);
+
+if (x <=101 && y <= 101) continue;
+endif;
+
+
+[IMG] = scale(IMG,x,y);
+
+[y,x,c] = size(IMG);
+imwrite(IMG, sprintf( argv(){i}));
+end
