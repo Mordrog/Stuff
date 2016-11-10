@@ -1,0 +1,203 @@
+body {
+    background: #1111;
+	font-family: "Open Sans",  Impact;
+	//overflow-x: hidden;
+	margin: 0 auto;
+	top: 0%;
+    left: 50%;
+	position:absolute;
+	transform: translate(-50%, -0%);
+}
+
+
+
+
+
+
+
+header{
+    padding: 10px;
+	//width: 1200px;
+	background-image: url("header.png");
+
+	//left: -420px;
+}
+footer {
+	position:absolute;
+	bottom: 0%;
+	left: 0px;
+	z-index = -100;
+}
+
+embed{
+z-index = -100;
+}
+
+
+section {
+    padding: 20px;
+	width: 2000px;
+	height: 1000px;
+	position:absolute;
+	//margin: 0 auto;
+	border-radius: 10px;
+	background-image: url("BG3.jpg");
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 170px;
+	
+
+}
+p{
+font-size:0.1em;
+}
+
+
+.Bubble{
+width: 200px;
+height: 200px;
+border-radius: 200px;
+border-left: 30px solid black;
+border-top: 30px solid black;
+border-right: 5px solid black;
+border-bottom: 5px solid black;
+  background: #000111; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, #0A0349, black); /* Safari */
+  background: -o-radial-gradient(circle, #0A0349, black); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #0A0349, black); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #0A0349, black); /* Standard syntax */
+  color: white;
+  text-align:left;
+  vertical-align: middle;
+  //line-height: 150px;  
+  animation:reveal 1s linear 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  word-wrap: break-word;
+  z-index = 1;
+}
+
+.Bubble:not(Bubble):hover{
+
+animation-play-state: running;
+
+animation:hide 1s linear 1;
+animation-fill-mode: backwards;
+animation-play-state: paused;
+}
+@keyframes reveal{
+	from {
+  -webkit-transform: scale(1,1);
+  }
+
+  to {
+  -webkit-transform: scale(2.5,2.5);
+  }
+}
+
+.Bubble:hover{
+animation-play-state: running;
+}
+@keyframes hide{
+	from {
+  -webkit-transform: scale(2.5,2.5);
+  }
+
+  to {
+  -webkit-transform: scale(1,1);
+  }
+}
+.Bubble:hover p{
+display: block;
+}
+
+
+.Bubble-Pos-1{
+position: absolute;
+left: 400px;
+top:200px; 
+}
+
+.Bubble-Pos-2{
+position: absolute;
+left: 600px;
+top:450px; 
+}
+
+.Bubble-Pos-3{
+position: absolute;
+left: 1200px;
+top:100px; 
+}
+
+.Bubble-Pos-4{
+position: absolute;
+left: 800px;
+top:800px; 
+}
+
+.Bubble-Pos-5{
+position: absolute;
+left: 1300px;
+top:600px; 
+}
+
+article {
+    margin: px;
+    padding: 10px;
+    background-color: #000111;
+	color: white;
+	border-radius: 50px;
+	width: 500px;
+	position: relative;
+  background: #000111; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, black, #000111); /* Safari */
+  background: -o-radial-gradient(circle, black, #000111); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, black, #000111); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, black, #000111); /* Standard syntax */
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: px;
+}
+
+
+
+
+/*
+div {background-color: green;}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 183px;
+  display: none;
+}
+ul li ul li {
+  background: #555;
+  display: block;
+  height: 100px;
+}
+ul li ul li a {display:block !important;}
+ul li ul li:hover {background: #666;}
+*/
+
