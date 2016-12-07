@@ -6,12 +6,26 @@
 </head>
 
 <body>
-<header class="headerHeading">
-
+<header>
+<div id="headline">
 Hello
-
+</div>
 </header>
 <div style="display:inline-block; border: 1px solid black; width:500px; height:500px;"></div>
+
+<script type="text/javascript">//<![CDATA[ 
+$(document).ready(function() {
+    $(window).resize(function() {
+        var bodyheight = $(this).height();
+		
+        $("header").height(bodyheight/4);
+		$("#headline").css("line-height", bodyheight/4+"px"); 
+		$("header").css("background-size", 100+"%+" "cover"); 
+    }).resize();
+});
+        </script> 
+
+
 
 
 </body>

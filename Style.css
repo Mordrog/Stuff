@@ -3,19 +3,19 @@ body {
 	margin: 0px;
  }
 header{
-	width:auto;
-	height: 300px
-	min-height 150px;;
-	background-image: url("city2.png");
-	background-size:cover;
-	
+	width:100%;
+
+	background-image: url("images2.png");
+	background-size: 100% 300px;
+	background-color: black;
 } 
 
-.headerHeading{
+#headline{
 	vertical-align: middle;
 	line-height: 300px;
-	font-size:5.5em;
+	font-size:5.5vw;
 	width: auto;
+	height:100%;
 	color:#fff;
   letter-spacing: 0px;
   text-transform:uppercase;
